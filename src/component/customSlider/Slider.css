@@ -1,0 +1,170 @@
+.slider-container {
+  color: #fff;
+}
+
+.slider-title {
+  padding: 25px 170px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.slider-body {
+  padding: 0 38px 82px 38px;
+}
+
+.slick-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-list {
+  overflow: hidden;
+  display: flex;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slider-item {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 568px;
+  border-radius: 40px;
+  background: url('./image1.png') lightgray 50% / cover no-repeat;
+}
+
+.slider-item-info {
+  position: absolute;
+  bottom: 40px;
+  left: 45px;
+  color: #fff;
+}
+
+.slider-item-info h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.slider-item-info p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.slick-dots {
+	position: absolute;
+  display: flex !important;
+  justify-content: center;
+	align-self: center;
+  padding: 8px 12px 12px 9px;
+	border-radius: 16px;
+	border: 2px solid #C16F2E;
+	bottom: -60px;
+	left: 45%;
+	transition: all 0.3s ease;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: margin 0.3s ease;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots li .custom-dot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+	border: 2px solid #da8948 ;
+
+}
+
+.slick-dots li.slick-active {
+  width: 66px;
+}
+
+.slick-dots li.slick-active .custom-dot {
+	border: 2px solid #da8948 ;
+  border-radius: 20px;
+}
+
+.slick-dots li .progress-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active .progress-indicator {
+  border-radius: 20px;
+}
+
+.slick-dots li .progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 100%;
+  background-color: #C16F2E; 
+  transform: translateY(-50%);
+  border-radius: 20px;
+  width: 0;
+}
+
+.slick-dots li.slick-active .progress {
+  animation: progressAnimation 3s linear forwards;
+  border-radius: 20px;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+	.slider-title{
+		font-size: 24px;
+		padding: 24px;
+	}
+	.slick-dots {
+		left: 37%;
+	}
+}
+
+@media (max-width: 760px) {
+	.slider-body{
+		padding: 16px;
+	}
+	.slick-dots {
+		display: none !important;
+	}
+}

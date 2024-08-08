@@ -1,0 +1,44 @@
+.FullTable{
+	position: relative;
+	background: linear-gradient(269deg, rgba(31, 33, 42, 0.20) 1.81%, rgba(20, 20, 22, 0.20) 99.74%), linear-gradient(59deg, #141416 51.71%, #1F222B 97.85%, #222630 123.48%);
+}
+.cub{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.LatestTables{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 174px 45px 174px;
+}
+
+@media (max-width: 1600px) {
+	.LatestTables{
+		padding: 0 120px 32px 120px;
+	}
+	.table-container{
+		width: auto;
+	}
+}
+
+@media (max-width: 1472px) {
+	.LatestTables{
+		padding: 0 120px 32px 120px;
+		flex-direction: column;
+		gap: 32px;
+	}
+}
+
+@media (max-width: 768px) {
+	.LatestTables{
+		padding: 16px;
+		gap: 16px;
+	}
+	.table-content{
+		padding: 0;
+		overflow: auto;
+	}
+}

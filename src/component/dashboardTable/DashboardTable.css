@@ -1,0 +1,172 @@
+.DashboardTable-wrapper {
+  padding: 45px 174px;
+}
+
+.DashboardTable__container {
+  padding: 45px;
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  background: linear-gradient(290deg, rgba(218, 210, 210, 0.2) -7.53%, rgba(0, 0, 0, 0.00) 89.43%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.inner-container {
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.label {
+  width: 340px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.change-value {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.change {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.value {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.arrow.up {
+  color: #68FF95;
+}
+
+.arrow.down {
+  color: #CC2727;
+}
+
+.table-line {
+  background: #FFF;
+  width: 2px;
+}
+
+.DashboardTable-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-top: 1px solid rgba(255, 255, 255, 0.49);
+  padding-top: 20px;
+}
+
+/* Media query for responsive design starting at 1520px */
+@media (max-width: 1520px) {
+  .DashboardTable-wrapper {
+    padding: 30px 120px;
+  }
+
+  .inner-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .table-line {
+    display: none;
+  }
+
+  .label {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .change-value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .change, .value {
+    font-size: 14px;
+  }
+
+  .DashboardTable-bottom {
+    flex-wrap: wrap;
+		gap: 20px;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .DashboardTable-wrapper {
+    padding: 32px 16px;
+  }
+
+  .inner-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .table-line {
+    display: none;
+  }
+
+  .label {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .change-value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .change, .value {
+    font-size: 14px;
+  }
+
+  .DashboardTable-bottom {
+    flex-wrap: wrap;
+		gap: 20px;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}

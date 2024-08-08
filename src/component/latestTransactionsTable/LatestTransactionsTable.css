@@ -1,0 +1,12 @@
+.block-commission {
+	display: flex;
+	flex-direction: row;
+}
+.block-commission-left {
+	display: flex;
+	flex-direction: column;
+}
+.block-commission-right {
+	display: flex;
+	flex-direction: column;
+}
