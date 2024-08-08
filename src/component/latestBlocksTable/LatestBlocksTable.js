@@ -32,7 +32,7 @@ const LatestBlocksTable = ({ blocks }) => {
 										</div>
 										</td>
 									<td>
-										Fee Recipient <a href={block.recipientLink}>{block.recipientLinkText}</a> <br /> in {block.commissionTime}
+										Fee Recipient <a href={block.recipientLink}>{block.recipientLinkText}</a> <br /> <span className='commissionTime'>in {block.commissionTime}</span> 
 									</td>
 									<td>{block.speed}</td>
 									<td>{block.amount}</td>
