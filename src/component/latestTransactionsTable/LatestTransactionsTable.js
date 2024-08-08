@@ -36,8 +36,8 @@ const LatestTransactionsTable = ({ blocks }) => {
 												<p>To:</p>
 											</div>
 											<div className="block-commission-right">
-												<a href={block.recipientLink}>{block.recipientLinkText}</a> 
-												<a href={block.recipientLink}>{block.recipientLinkText}</a> 
+												<a href={block.recipientLink1}>{block.recipientLinkText1}</a> 
+												<a href={block.recipientLink2}>{block.recipientLinkText2}</a> 
 											</div>
 										</div>
 										</td>

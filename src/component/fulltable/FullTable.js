@@ -4,6 +4,7 @@ import LatestTransactionsTable from "../latestTransactionsTable/LatestTransactio
 import './FullTable.css';
 import cub from './cub.png';
 import block from './block.svg';
+import number from './number.svg';
 
 const data = [
   [
@@ -73,6 +74,99 @@ const blocksData = [
     commissionTime: '10secs',
     speed: '10 min/hour',
     amount: '0,0014 Eth'
+  },
+	{
+		img: block,
+		numberTime:'10secs',
+    number: '12215522',
+    recipientLink: '1215155txns',
+    recipientLinkText: '1215155txns',
+    commissionTime: '10secs',
+    speed: '10 min/hour',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: block,
+		numberTime:'10secs',
+    number: '12215522',
+    recipientLink: '1215155txns',
+    recipientLinkText: '1215155txns',
+    commissionTime: '10secs',
+    speed: '10 min/hour',
+    amount: '0,0014 Eth'
+  },	
+];
+
+const transactionData = [
+  {
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
+  },
+	{
+		img: number,
+		numberTime:'15 secs',
+    number: '12215522',
+    recipientLink1: '0x541542....585874',
+    recipientLinkText1: '0x541542....585874',
+		recipientLink2: '0x354156345',
+    recipientLinkText2: '0x354156345',
+    amount: '0,0014 Eth'
   }
 ];
 
@@ -83,7 +177,7 @@ function FullTable(){
 			<DashboardTable data={data}/>
 			<div className="LatestTables">
 				<LatestBlocksTable blocks={blocksData} />
-				<LatestTransactionsTable blocks={blocksData} />
+				<LatestTransactionsTable blocks={transactionData} />
 			</div>
 		</div>
 	)
